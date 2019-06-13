@@ -308,11 +308,10 @@ function () {
         } else if (this.classList.contains('is-circle')) {
           self.audio.loop = false;
           this.classList.remove('is-circle');
-          this.classList.remove('no-circle');
-        }
+          this.classList.add('no-circle');
+        } // console.log('loop')
+        //     self.loopSong()
 
-        console.log('loop');
-        // self.loopSong();
       };
 
       this.audio.ontimeupdate = function () {
@@ -512,7 +511,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64215" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50114" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

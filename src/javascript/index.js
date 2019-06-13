@@ -68,10 +68,10 @@ class player {
             } else if (this.classList.contains('is-circle')) {
                 self.audio.loop = false
                 this.classList.remove('is-circle')
-                this.classList.remove('no-circle')
+                this.classList.add('no-circle')
             }
-        console.log('loop')
-            // self.loopSong()
+        // console.log('loop')
+        //     self.loopSong()
         }
         this.audio.ontimeupdate = function () {
             console.log(parseInt(self.audio.currentTime * 1000))
