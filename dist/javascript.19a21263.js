@@ -312,7 +312,7 @@ function () {
         }
 
         console.log('loop');
-        self.loopSong();
+        // self.loopSong();
       };
 
       this.audio.ontimeupdate = function () {

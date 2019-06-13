@@ -71,7 +71,7 @@ class player {
                 this.classList.remove('no-circle')
             }
         console.log('loop')
-            self.loopSong()
+            // self.loopSong()
         }
         this.audio.ontimeupdate = function () {
             console.log(parseInt(self.audio.currentTime * 1000))
